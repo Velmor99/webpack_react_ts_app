@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "lib": ["es6", "DOM"],
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "strictNullChecks": true,
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "moduleResolution": "Node"
+    }
+}
