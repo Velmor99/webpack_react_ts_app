@@ -6,12 +6,17 @@ const initialState: IAlert = {
   alertMessageContent: "",
 };
 
-interface IAlertAction {
-  type: keyof typeof alertActions,
-  content: string
+interface IOpenAlertMessage {
+  type: "ALERT.OPEN_ALERT_MESSAGE";
+  content: string;
 }
 
-const reducer = (state = initialState, action: IAlertAction): IAlert => {
+interface ICloseAlertMessage {
+  type: "ALERT.CLOSE_ALERT_MESSAGE";
+  content: string;
+}
+
+const reducer = (state = initialState, action: IOpenAlertMessage | ICloseAlertMessage): IAlert => {
   switch (action.type) {
     case alertActions.OPEN_ALERT_MESSAGE:
       return {

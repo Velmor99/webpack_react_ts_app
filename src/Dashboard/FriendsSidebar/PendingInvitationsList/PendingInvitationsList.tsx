@@ -14,14 +14,14 @@ const MainContainer = styled('div')({
 })
 
 interface IProps {
-    pendingFriendsInvitantions: IPendingFriendInvitantion[]
+    pendingFriendsInvitations: IPendingFriendInvitantion[]
 }
 
-const PendingInvitationsList = ({pendingFriendsInvitantions}: IProps) => {
+const PendingInvitationsList = ({pendingFriendsInvitations}: IProps) => {
     // console.log('pending',pendingFriendsInvitantions)
     return (
         <MainContainer>
-            {pendingFriendsInvitantions.map(invitantion => (
+            {pendingFriendsInvitations.map(invitantion => (
                 <PendingInvitantionsListItem 
                 key={invitantion._id}
                 id={invitantion._id}

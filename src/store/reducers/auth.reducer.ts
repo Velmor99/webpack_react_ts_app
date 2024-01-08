@@ -11,7 +11,7 @@ const initialState: IAuthResponce = {
 };
 
 interface IAuthAction {
-  type: keyof typeof authActions,
+  type: "AUTH.SET_USER_DETAILS",
   userDetails: IUserDetails
 }
 

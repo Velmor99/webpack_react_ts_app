@@ -20,7 +20,7 @@ export interface IActions {
   SET_USER_DETAILS: "AUTH.SET_USER_DETAILS"
 }
 
-export const getActions = (dispatch: Dispatch<ISetUserDetails | IOpenAlertMessage>) => {
+export const getActions = (dispatch: any) => {
   return {
     login: (userDetails: ILoginDetails, history: NavigateFunction) =>
       dispatch(login(userDetails, history)),

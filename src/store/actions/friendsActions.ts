@@ -27,7 +27,7 @@ export const getActions = (dispatch: any) => {
 export const setPendingFriendsInvitations = (
   pendingFriendsInvitations: IPendingFriendInvitantion[]
 ) => {
-  // console.log("from action", pendingFriendsInvitations);
+  console.log("from action", pendingFriendsInvitations);
   return {
     type: friendsActions.SET_PENDING_FRIENDS_INVITANTIONS,
     pendingFriendsInvitations,

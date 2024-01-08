@@ -21,7 +21,7 @@ const FriendsSidebar = () => {
             <FriendsTitle title='Private Messages'/>
             <FriendsList/>
             <FriendsTitle title='Invitations'/>
-            <PendingInvitationsList pendingFriendsInvitantions={[]} />
+            <PendingInvitationsList pendingFriendsInvitations={[]} />
         </MainContainer>
     );
 };
